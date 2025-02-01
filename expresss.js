@@ -9,4 +9,6 @@ app.listen(port, () => { // listen makes the web server listen
  
 app.use((req,res)=>{
     console.log(req);
+    let code = "<h1>MR CODER</h1>"
+    res.send(code);
 });
