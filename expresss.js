@@ -1,7 +1,7 @@
-const express = require("express");
+/*const express = require("express");
 const app = express(); // app is an object
 
-let port = 8080;
+let port = 3000;
 app.listen(port, () => { // listen makes the web server listen
     console.log(`App is listening on port ${port}`);
 });
@@ -29,4 +29,4 @@ app.get("/search", (req, res) => {
     } else {
         res.send("<h1>No search query provided</h1>");
     }
-});
+});*/
