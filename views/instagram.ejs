@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTAGRAM</title>
+</head>
+<body>
+    
+    <h2>THIS PAGE BELONGS TO <%= username %></h2>
+    <button>Follow</button>
+    <button>Message</button>
+
+    <h3>Accounts that follow you:</h3>
+    <ul>
+        <% followers.forEach(follower => { %>
+            <li><%= follower %></li>
+        <% }) %>
+    </ul>
+
+</body>
+</html>
