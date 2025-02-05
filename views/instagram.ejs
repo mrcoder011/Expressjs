@@ -43,7 +43,7 @@
 </head>
 <body>
     
-    <h2>THIS PAGE BELONGS TO <%= data.name %></h2>
+    <h2>THIS PAGE BELONGS TO <%= data.name.toUpperCase(); %></h2>
     <button>Follow</button>
     <button>Message</button>
     <p> FOLLOWERS OF <%= data.name.toUpperCase() %> : <%= data.followers %> &nbsp; &nbsp;  FOLLOWING : <%= data.following %> </p>

@@ -14,9 +14,15 @@ app.get("/ig/:username", (req, res) => {
     let { username } = req.params;
     const instaData = require("./data.json");
     const data = instaData[username];
-    console.log(data);
-    res.render("instagram.ejs", { data: instaData[username] });
+    if(data){
+        res.render("instagram.ejs", { data: instaData[username] });
+    }
+else {
+res.render("error.ejs")
+}
 });
+    
+    
 
 app.get("/hello", (req, res) => {
     res.send("hello");
