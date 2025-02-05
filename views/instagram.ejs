@@ -3,16 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSTAGRAM</title>
+    <title>INSTAGRAM - <%= data.name %></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+        h2 {
+            color: #262626;
+        }
+        button {
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0077b6;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #8e8e8e;
+        }
+        hr {
+            border: 0.5px solid #dbdbdb;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
     
     <h2>THIS PAGE BELONGS TO <%= data.name %></h2>
     <button>Follow</button>
     <button>Message</button>
-    <p> FOLLOWERS OF <%= data.name.toUpperCase(); %> : <%= data.followers %> &nbsp; &nbsp;  FOLLOWING : <%= data.following %> </p>
+    <p> FOLLOWERS OF <%= data.name.toUpperCase() %> : <%= data.followers %> &nbsp; &nbsp;  FOLLOWING : <%= data.following %> </p>
    
-<hr>
+    <hr>
+
+    <% for (let post of data.posts) { %>
+        <img src="<%= post.image %>" alt="Post by <%= data.name %>">
+        <p>
+            Likes: <%= post.likes %> &nbsp;&nbsp; Comments: <%= post.comments %>
+        </p>
+    <% } %>
 
 </body>
 </html>
