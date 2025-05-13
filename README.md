@@ -14,7 +14,7 @@ Middleware integration
 
 RESTful API development
 
-Authentication & Authorization
+Authentication & Authorization.
 
 Error handling & Logging
 
