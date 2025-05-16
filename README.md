@@ -2,7 +2,7 @@
 
 🚀 Express.js Journey – From Start to Finish
 
-Welcome to my Express.js journey, where I’ve documented everything from the basics to advanced-level implementations. This repository is a reflection of my learning curve, challenges, and hands-on experience with Express.js – the fast, unopinionated, and minimalist web framework for Node.js.
+Welcome to my Express.js journey, where I’ve documented everything from the basics to advanced-level implementations. This repository is reflection of my learning curve, challenges, and hands-on experience with Express.js – the fast, unopinionated, and minimalist web framework for Node.js.
 
 What's Inside:
 
