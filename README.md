@@ -24,7 +24,7 @@ Connecting to MongoDB
 
 Environment variable management
 
-Deployment-ready setup.
+Deployment-ready setup
 
 
 
